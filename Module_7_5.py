@@ -1,9 +1,7 @@
 import os
 import time
 
-directory = '.'
-
-for root, dirs, files in os.walk(directory):
+for root, dirs, files in os.walk('.'):
     for file in files:
         filepath = os.path.join(file)
         filetime = os.path.getmtime(file)
